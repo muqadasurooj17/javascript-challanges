@@ -61,3 +61,33 @@ function calculateAverage() {
   // Call the function to calculate the average
   calculateAverage();
   
+  function calculateOddNumbers() {
+    // Prompt the user to enter a value
+    var inputValue = parseInt(prompt("Enter a number:"));
+  
+    // Check if the input is a valid number
+    if (isNaN(inputValue)) {
+      alert("Please enter a valid number.");
+      return;
+    }
+  
+    // Initialize an empty array to store the odd numbers
+    var oddNumbers = [];
+  
+    // Calculate and store odd numbers up to the entered value
+    for (var i = 1; i <= inputValue; i++) {
+      if (i % 2 !== 0) {
+        oddNumbers.push(i);
+      }
+    }
+  
+    // Display the odd numbers
+    alert("Odd numbers up to " + inputValue + " are: " + oddNumbers.join(', '));
+  }
+  
+  // Call the function to calculate and display odd numbers
+  calculateOddNumbers();
+  
+  
+   
+  
