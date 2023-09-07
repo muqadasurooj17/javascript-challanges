@@ -39,17 +39,13 @@ while (i<n){
    
 }
 
-//working of for of loop
+//do while loop
+let x = prompt("enter the value of x");
+x = Number.parseInt(x);
+let i = 0;
 
-for( let b  of "muqadas")
-  console.log(b);
-
-  let obj={
-    urooj:17,
-    car:"bmw",
-    dress:"red",
-    age:23
-  
-  }
-  for(let a in obj)
-    console.log("details of "+ a +"are here"+obj[a] );
+do {
+  console.log(i)
+  i++;
+}
+while(i < x) 
