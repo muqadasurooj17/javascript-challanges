@@ -29,13 +29,18 @@ switch(age){
 }
 
 //while loop in js
-var a;
+let n = prompt("enter the value of n");
+n=Number.parseInt(n);
+let i=0;
+while (i<n){
+    console.log(i)
+    i++;
 
-while ( a<=10){
-console.log(prompt("enter the value of a "+ a))
+   
 }
 
 //working of for of loop
+
 for( let b  of "muqadas")
   console.log(b);
 
